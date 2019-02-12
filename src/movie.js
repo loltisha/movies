@@ -6,7 +6,6 @@ import Cast from './cast'
 class Movie extends Component {
   render() {
     const movieCast = this.props.movie.cast
-        // const actors = castDetails.map(actor => <Cast actor={actor} />)
         const actorCast = movieCast.map((actor)=> {
           return  <Cast actor = {actor} />;
         });
